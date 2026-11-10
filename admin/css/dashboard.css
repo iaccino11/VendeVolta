@@ -1,0 +1,35 @@
+.vendevolta-wrapper { max-width: 1100px; margin: 20px 20px 0 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.vendevolta-header { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border-left: 5px solid #2271b1; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+.vendevolta-header h1 { margin: 0; font-size: 26px; font-weight: 800; color: #1d2327; }
+.vendevolta-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 30px; }
+.vendevolta-stat-card { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 15px; transition: transform 0.2s; }
+.vendevolta-stat-card:hover { transform: translateY(-3px); }
+.vendevolta-stat-icon { font-size: 30px; background: #f0f0f1; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 12px; flex-shrink: 0; }
+.vendevolta-stat-info h3 { margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; color: #646970; letter-spacing: 0.5px; font-weight: 600; }
+.vendevolta-stat-info .number { font-size: 26px; font-weight: 800; color: #1d2327; line-height: 1; }
+.vendevolta-table-container { background: #fff; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); overflow: hidden; margin-bottom: 40px; }
+.vendevolta-table-container th { background: #f8f9fa; padding: 18px 20px; font-weight: 700; color: #1d2327; border-bottom: 2px solid #e2e4e7; font-size: 14px; }
+.vendevolta-table-container td { padding: 18px 20px; vertical-align: middle; border-bottom: 1px solid #f0f0f1; color: #3c434a; font-size: 14px; }
+.vendevolta-badge { display: inline-block; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; background: #f0f0f1; color: #646970; }
+.vendevolta-badge.hot { background: #ffebe8; color: #d63638; }
+.vendevolta-pro-teaser { padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e2e4e7 100%); border-radius: 12px; border: 1px dashed #c3c4c7; text-align: center; margin-top: 20px; }
+.vendevolta-pro-badge { display: inline-block; background: #d63638; color: #fff; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 20px; margin-left: 8px; }
+.vendevolta-section-title { font-size: 22px; font-weight: 800; color: #1d2327; margin: 40px 0 20px 0; display: flex; justify-content: space-between; align-items: center; }
+
+/* Utilitários extraídos das views (v2.4.4) */
+.vendevolta-intro { color: #646970; margin: 5px 0 0 0; font-size: 15px; }
+.vendevolta-number--green { color: #00a32a; }
+.vendevolta-text--muted { color: #646970; }
+.vendevolta-text--danger { color: #d63638; }
+.vendevolta-empty { margin: 0; }
+.vendevolta-pro-teaser-title { margin: 0 0 10px 0; font-size: 16px; }
+
+/* Variantes de cor dos ícones das stat cards */
+.vendevolta-stat-icon--search { background: #ffebe8; color: #d63638; }
+.vendevolta-stat-icon--cart   { background: #fff4e5; color: #dba617; }
+.vendevolta-stat-icon--money  { background: #e5f5fa; color: #2271b1; }
+.vendevolta-stat-icon--ok     { background: #e6f6e9; color: #00a32a; }
+/* Larguras de coluna (antes inline) */
+.vendevolta-col-15 { width: 15%; }
+.vendevolta-col-20 { width: 20%; }
+.vendevolta-col-35 { width: 35%; }
