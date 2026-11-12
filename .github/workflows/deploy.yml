@@ -1,15 +1,17 @@
-
 name: Deploy to WordPress.org
+
 on:
   push:
     tags:
-      - '*'
+      - 'v*' # Dispara apenas quando você cria tags no formato v1.0.0, v2.5.3, etc.
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
