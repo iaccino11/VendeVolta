@@ -1,11 +1,13 @@
+
 name: Deploy Assets to WordPress.org
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main # ou master
+      - main
     paths:
-      - '.wordpress-org/**' # Dispara apenas se algo mudar nesta pasta
+      - '.wordpress-org/**'
 
 jobs:
   deploy-assets:
