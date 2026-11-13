@@ -1,0 +1,23 @@
+name: Deploy Assets to WordPress.org
+
+on:
+  push:
+    branches:
+      - main # ou master
+    paths:
+      - '.wordpress-org/**' # Dispara apenas se algo mudar nesta pasta
+
+jobs:
+  deploy-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: WordPress.org Asset Update
+        uses: 10up/action-wordpress-plugin-asset-update@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: ${{ secrets.PLUGIN_SLUG }}
+          ASSETS_DIR: .wordpress-org
